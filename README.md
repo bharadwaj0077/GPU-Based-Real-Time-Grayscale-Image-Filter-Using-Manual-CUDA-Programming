@@ -39,3 +39,28 @@ CudaGrayscale/
 
 After running the program, a new file will be generated that is grey.png:
 grey.png contain the greyscale convertion of input image.
+
+## CPU-Based Sequential Grayscale Image Filter
+
+# 1. Prerequisites
+Hardware
+Any modern CPU (e.g., Intel Core i7, AMD Ryzen 5, or similar)
+
+Sufficient RAM for image loading and processing.
+
+Software
+Windows 11 (x64)
+
+Visual Studio 2022 (Community Edition)
+
+Workload: Desktop development with C++
+
+C++ Compiler (specifically g++)
+
+C++17 standard is recommended for file system features.
+
+STB Image Libraries (header-only, no install)
+
+stb_image.h (for loading images)
+
+stb_image_write.h (for saving images)
