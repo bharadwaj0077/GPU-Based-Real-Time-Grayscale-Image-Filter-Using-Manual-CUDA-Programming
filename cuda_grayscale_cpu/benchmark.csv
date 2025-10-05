@@ -1,0 +1,7 @@
+Image,Width,Height,CPU_Time(ms)
+images\img_256.jpg,256,256,0.004
+images\img_512.jpg,512,512,0.102
+images\img_720.jpg,1024,1024,2.745
+images\img_1080.jpg,1920,1080,7.832
+images\img_2160.jpg,3840,2160,23.508
+images\image_4k.jpg,5472,3648,52.265
