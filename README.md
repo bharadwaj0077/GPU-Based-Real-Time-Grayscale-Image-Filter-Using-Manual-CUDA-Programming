@@ -65,3 +65,43 @@ grey.png contain the greyscale convertion of input image.
 * stb_image.h (for loading images)
 
 * stb_image_write.h (for saving images)
+
+
+# GPU-Based-Grayscale-Video-Filter-CUDA-Programming
+---
+
+## 1. Prerequisites
+
+### Hardware
+- NVIDIA GPU (*GeForce RTX 4070* or similar)
+
+### Software
+- *Windows 11* (x64)
+- *NVIDIA GPU Driver* (verified with `nvidia-smi`)
+- *Visual Studio 2022 (Community Edition)*
+  - Workload: Desktop development with C++
+- *CUDA Toolkit 12.9 / 13.0*
+  - Verified with:
+    ```bash
+    nvcc --version
+    ```
+- *STB Image Libraries* (header-only, no install)
+  - stb_image.h (for loading images)
+  - stb_image_write.h (for saving images)
+
+---
+
+## 2. Folder Structure
+C:\Users\srima\Desktop\HPC_test\Cuda_grayscale_video
+-
+Root\
+  - input.mp4
+  - output_gray.mp4
+  - video_gray.exe
+  - video_gray.exp
+  - video_gray.lib
+  - video_grayscale.cu
+
+After running the program, a new file will be generated — **output_gray.mp4**.  
+It contains the grayscale conversion of the input video.
+---
