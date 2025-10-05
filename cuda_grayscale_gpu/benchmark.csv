@@ -1,0 +1,7 @@
+Image,Width,Height,GPU_Time(ms)
+images\img_256.jpg,256,256,0.091
+images\img_512.jpg,512,512,0.252
+images\img_720.jpg,1024,1024,0.296
+images\img_1080.jpg,1920,1080,0.339
+images\img_2160.jpg,3840,2160,0.352
+images\image_4k.jpg,5472,3648,0.626
