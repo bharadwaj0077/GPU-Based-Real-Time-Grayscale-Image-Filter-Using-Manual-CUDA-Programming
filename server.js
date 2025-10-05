@@ -1,10 +1,4 @@
 
-
-
-// ================================================================
-// GPU-Based Grayscale Filter Server (CPU & GPU modes)
-// ================================================================
-
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
