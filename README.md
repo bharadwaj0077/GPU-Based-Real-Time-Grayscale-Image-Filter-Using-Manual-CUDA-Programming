@@ -105,3 +105,51 @@ Root\
 After running the program, a new file will be generated — **output_gray.mp4**.  
 It contains the grayscale conversion of the input video.
 ---
+# Web Integration — Full Project Description
+
+This extended phase integrates both *CPU* and *CUDA* executables into a *web-based system* with a *Node.js + Express backend*.  
+Users can upload images or videos through a browser and choose between *CPU (C++)* or *GPU (CUDA)* for real-time grayscale conversion.
+---
+## Folder Structure
+-
+C:\Root
+- public/
+    - index.html
+- bin/
+    - cpu_gray_image.exe
+    - cuda_gray_image.exe
+    - cpu_gray_video.exe
+    - cuda_gray_video.exe
+- uploads/ # Auto-created during runtime
+- results/ # Processed outputs saved here 
+- server.js # Node.js backend
+- package.json
+
+---
+
+## How It Works
+
+1. User opens the web app at http://localhost:3000.
+2. Chooses:
+   - *Image* or *Video*
+   - *CPU* or *GPU*
+3. Uploads a file → Backend stores it in /uploads/.
+4. The backend runs the appropriate executable from /bin/.
+5. The processed output is saved to /results/ and displayed in the UI.
+
+---
+
+## Node.js Setup
+
+```bash
+npm init -y
+npm i express multer cors
+node server.js
+
+Now in brower open http://localhost:3000
+There you can input the image or video and select the cpu or gpu it will run the corresponding and give the grayscale output.
+```
+## Conclusion
+
+This project successfully demonstrates real-time image and video processing using CUDA parallel programming.
+It integrates high-performance native computing with a modern web interface, showcasing the advantage of GPU acceleration over CPU-based execution.
