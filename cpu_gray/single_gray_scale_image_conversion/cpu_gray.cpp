@@ -52,12 +52,13 @@ int main(int argc, char* argv[]) {
     auto end = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = end - start;
-    printf("⏱ CPU conversion time: %.3f ms\n", elapsed.count());
+    printf("CPU conversion time: %.3f ms\n", elapsed.count());
 
     stbi_write_jpg(out_name, w, h, 1, out, 90); 
-    printf("✅ Wrote %s (%dx%d)\n", out_name, w, h);
+    printf("Wrote %s (%dx%d)\n", out_name, w, h);
 
     stbi_image_free(img);
     free(out);
     return 0;
 }
+
